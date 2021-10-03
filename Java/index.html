@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program for basic arithmetic operations</title>
+</head>
+<body>
+
+    <script>
+    
+    var a = prompt ("Please enter number A:");
+    var operation = prompt ("Please enter arithmetic operation (+, -, *, /):");
+    var b = prompt ("Please enter number B:");
+
+    var add = sum(a,b);
+    var subtract = sub(a,b);
+    var multiply = mul(a,b);
+    var division = div(a,b);
+
+    function sum(a,b) {
+    return parseInt(a) + parseInt(b);
+    }
+
+    function sub(a,b) {
+    return parseInt(a) - parseInt(b);
+    }
+
+    function mul(a,b) {
+    return parseInt(a) * parseInt(b);
+    }
+    
+    function div(a,b) {
+    return parseInt(a) / parseInt(b);
+    }
+
+    switch(operation) {
+
+        case "+":
+        alert("C=: " + add);
+        break;
+
+        case "-":
+        alert("C=: " + subtract);
+        break;
+
+        case "*":
+        alert("C=: " + multiply);
+        break;
+
+        case "/":
+        alert("C=: " + division);
+        break;
+
+        default:
+
+        alert("Unknown value"); 
+        break;
+
+    }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citanje podataka o studentima</title>
+
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        fetch('https://github.com/Tamara588/new-citanje-podataka/blob/master/read.txt').then(function (response) {
+        if(response.status !== 200){
+            throw Error("Error while reading file.");
+        }
+        return response.text();
+    }).then(function (text) {
+        textArea.innerHTML = text;
+    }).catch(function (err) {
+        textArea.innerHTML = 'Fetch problem: ' + err.message;
+    }).finally(function(){
+        loader.style.display = "none";
+    });
+
+    </script>
+</body>
+</html>

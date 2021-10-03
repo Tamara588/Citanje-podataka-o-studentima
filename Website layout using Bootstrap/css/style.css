@@ -1,0 +1,78 @@
+/**********************************HEADER*************************************/
+
+h1 {
+    margin-left: 70px;
+}
+
+header a {
+    color: #868686;
+    margin-left: 35px;
+}
+
+header a:hover {
+    color:#868686;
+}
+
+header a:visited {
+    color: black;
+}
+
+#menu-icon {
+    width: 32px;
+    margin-top: 10px;
+    float: left;
+}
+
+/**********************************HERO SECTION*************************************/
+
+#hero-section {
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    
+}
+
+/**********************************INTRO SECTION*************************************/
+
+#intro-section {
+    background: #f3f3f0;
+}
+
+/**********************************ABOUT SECTION*************************************/
+
+#about-section {
+    background: #f3f3f0;
+}
+
+.border-3 {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/**********************************INFO SECTION*************************************/
+
+#info-section {
+    background: #292929;
+}
+
+.border-2 {
+    border-top: 1px solid #868686;
+}
+
+.table {
+    width: 380px;
+}
+
+
+/**********************************FOOTER*************************************/
+
+footer {
+    background: black;
+    text-align: center;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout using Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid py-2">
+            <div class="row py-2">
+                <div class="col-6">
+                    <h1 class="display-6"><small class="text-muted">My Website</small></h1>
+                </div>
+                <div class="d-none d-xl-block col-6 text-center pt-3">
+                    <a class="text-decoration-none text-muted" href="#">Home</a>
+                    <a class="text-decoration-none text-muted" href="#">Portfolio</a>
+                    <a class="text-decoration-none text-muted" href="#">Staff</a>
+                    <a class="text-decoration-none text-muted" href="#">Features</a>
+                    <a class="text-decoration-none text-muted" href="#">Blog</a>
+                    <a class="text-decoration-none text-muted" href="#">Contact</a>
+                    <a class="text-decoration-none text-muted" href="#">Download</a>
+                </div>
+                <div class="d-xl-none col-6 text-right">
+                    <img id="menu-icon" src="img/menu.png" alt="menu" class="mx-4">
+                    <p class="text-muted" style="font-size: 32px;">Menu</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 mx-5 text-center py-5">
+                <div class="col-12 py-5 my-5">
+                    <p class="my-5 bg-success" style="width: 45vw; font-size: 2vw;">We strive to make all of our creations exquisite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="intro-section" class="py-5">
+        <div class="container py-5">
+            <div class="row py-2">
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid py-3" src="img/icon-1.png" alt="img-1">
+                    <p class="h4 py-2">Purpose</p>
+                    <p class="text-muted">Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est. Etiam tincidunt tempus.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid py-3" src="img/icon-2.png" alt="img-2">
+                    <p class="h4 py-2">Quality</p>
+                    <p class="text-muted">Nam commodo risus pharetra magna egestas, nec iaculis augue lobortis. Proin eleifend enim quis.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid py-3" src="img/icon-3.png" alt="img-3">
+                    <p class="h4 py-2">Function</p>
+                    <p class="text-muted">Aenean et tellus id nisi vehicula fringilla. In condimentum dui eu turpis mollis turpis suscipit.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-fluid py-3" src="img/icon-4.png" alt="img-4">
+                    <p class="h4 py-2">Elegant</p>
+                    <p class="text-muted">Mauris accumsan magna in placerat lacinia. Proin sit amet neque vitae nunc pulvinar varius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="container-fluid px-5">
+            <div class="row mx-5">
+                <p class="h4 text-uppercase px-0 py-2 mx-3 border-3">recent work</p>
+                    <div class="col-sm-6 col-xl-3 px-3">
+                        <img class="img-fluid py-4" src="img/bike-400x340.jpg" alt="bike">
+                        <h5 class="text-left text-capitalize">green bike</h1>
+                            <p class="text-muted">Beautiful, Travel</p>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 px-3">
+                        <img class="img-fluid py-4" src="img/surf-400x340.jpg" alt="surf">
+                        <h5 class="text-left text-capitalize">salt of the earth</h1>
+                            <p class="text-muted">Beautiful, Travel</p>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 px-3">
+                        <img class="img-fluid py-4" src="img/hills-400x340.jpg" alt="hills">
+                        <h5 class="text-left text-capitalize">mountain high</h1>
+                            <p class="text-muted">Travel</p>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 px-3">
+                        <img class="img-fluid py-4" src="img/path-400x340.jpg" alt="path">
+                        <h5 class="text-left text-capitalize">when a tree falls</h1>
+                            <p class="text-muted">Beautiful, Travel</p>
+                    </div>
+            </div>
+            <div class="row mx-5 py-5">
+                <p class="h4 text-uppercase px-0 py-2 mx-3 border-3">from the blog</p>
+                <div class="col-xl-4">
+                    <img class="img-fluid py-4" src="img/cow-640x340.jpg" alt="cow">
+                    <h5 class="text-left text-capitalize" style="font-weight: bold;">how now</h1>
+                        <p>Posted on October 28, 2020</p>
+                        <p class="text-muted">Proin et ligula laoreet, vestibulum orci nec, eleifend purus. Quisque ullamcorper sem at ipsum elementum laoreet. Integer egestas...</p>
+                </div>
+                <div class="col-xl-4">
+                    <img class="img-fluid py-4" src="img/sunrise-640x340.jpg" alt="sunrise">
+                    <h5 class="text-left" style="font-weight: bold;">Adrift by Simon Christen</h1>
+                        <p>Posted on September 29, 2020</p>
+                        <p class="text-muted">Morbi vulputate egestas sem, eu cursus ligula ullamcorper non. Curabitur tristique velit eu mauris venenatis egestas. Phasellus bibendum...</p>
+                </div>
+                <div class="col-xl-4 pb-5">
+                    <img class="img-fluid py-4" src="img/grass-640x340.jpg" alt="grass">
+                    <h5 class="text-left text-capitalize" style="font-weight: bold;">a walk in the park</h1>
+                        <p>Posted on August 10, 2020</p>
+                        <p class="text-muted">Proin elementum pharetra mauris sed semper. Cras lorem arcu, vulputate ut malesuada ut, tincidunt tempor lectus. Etiam adipiscing...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-section">
+        <div class="container-fluid py-3">
+            <div class="row p-5 mx-3">
+                <div class="col-xl-4 px-0">
+                    <h5 class="text-capitalize text-light py-4 mx-4">my website</h5>
+                        <p class="text-muted lead mx-4" style="width: 380px; font-size: 17px;">Quisque id dolor leo. Vivamus tincidunt in diam ac condimentum. Quisque rutrum dolor dolor, non tincidunt tellus sollicitudin vitae. Mauris a dolor ut nibh volutpat aliquam. Sed dictum magna eu massa accumsan, sit amet viverra ligula gravida. Nam vehicula ut leo aliquet sodales.</p>
+                </div>
+                <div class="col-xl-4 px-0">
+                    <h5 class="text-capitalize text-light py-4 mx-4">recent posts</h5>
+                    <table class="table text-muted border-2 mx-4">
+                        <th>How Now</tr>
+                        <th>Adrift by Simon Christen</tr>
+                        <th>A Walk In The Park</tr>
+                        <th>Time To Think</tr>
+                        <th>Field Of Dreams</tr>
+                    </table>
+                </div>
+                <div class="col-xl-4 px-0">
+                    <h5 class="text-capitalize text-light mx-4 py-4">recent work</h5>
+                    <table class="table table-sm text-muted border-2 mx-4">
+                        <th>Beautiful</tr>
+                        <th>Travel</tr>
+                        <th>Surreal</tr>
+                        <th>Thoughts</tr>
+                        <th>Unique</tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid py-4">
+            <div class="row">
+                <div class="col-12 text-center text-light text-muted">
+                    © 2020 ITAcademy
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+</html>

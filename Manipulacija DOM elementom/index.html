@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacija DOM elementima</title>
+
+        <link href=https://fonts.googleapis.com/icon?family=Material+Icons rel="stylesheet">
+
+
+    <style>
+
+            body {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            #login-container {
+                width: 460px;
+                margin: 0 auto;
+            }
+
+            form label,
+            form input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            form input {
+                padding: 8px;
+                border-radius: 4px;
+            }
+
+            form label {
+                font-weight: bold;
+            }
+
+            form div {
+                margin: 16px 0px;
+                position: relative;
+            }
+
+            .form-control {
+                position: relative;
+            }
+
+            .form-control i {
+                position: absolute;
+                top: 45%;
+                right: 10px;
+                visibility: hidden;
+            }
+
+            .form-control.success input {
+                border-color: #2ecc71;
+            }
+
+            .form-control.error input {
+                border-color: #e74c3c;
+            }
+
+            .form-control.success i.u_check {
+                color: #2ecc71;
+                visibility: visible;
+            }
+
+            .form-control.error i.u_close {
+                color: #e74c3c;
+                visibility: visible;
+            }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="login-container">
+        <form id="form" action="index.html">
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input id="username" type="username">
+                <i class="material-icons u_check">u_check</i>
+                <i class="material-icons u_close">u_close</i>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input id="password" type="password">
+                <i class="material-icons u_check">p_check</i>
+                <i class="material-icons u_close">p_close</i>
+            </div>
+            <input type="submit" value="Login">
+            <p id="error"></p>
+    </form>
+    </div>
+
+    <script src="js/jquery-3.6.0.slim.min.js"></script>
+
+    <script>
+
+        var loginContainer = document.getElementById('login-container')
+
+
+        const form = document.getElementById('form');
+        const username = document.getElementById('username');
+        const password = document.getElementById('password');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            checkInputs();
+            validate();
+        });
+
+        function validate() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username == ""){
+                document.getElementById('error').innerHTML = 'Please, enter username';
+                return false;
+            } else if (password == ""){
+                document.getElementById('error').innerHTML = 'Please, enter password';
+                return false;
+            } else if (username !== "new_user"){
+                document.getElementById('error').innerHTML = 'Please, enter valid username';
+                return false;
+            } else if (password !== "123456789"){
+                document.getElementById('error').innerHTML = 'Please, enter valid password';
+                return false;
+            } else {
+                document.getElementById('error').innerHTML = 'Login successfully';
+                return true;
+            }
+        }
+
+        function checkInputs() {
+            const usernameValue = username.value.trim();
+            const passwordValue = password.value.trim();
+
+            if(usernameValue ==='' || usernameValue !== "new_user") {
+                setErrorFor(username);
+            } else {
+                setSuccessFor(username);
+            }
+
+            if(passwordValue === '' || passwordValue !== "123456789") {
+                setErrorFor(password);
+            } else {
+                setSuccessFor(password);
+            }
+        }
+
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-control error';
+        }
+
+        function setSuccessFor(input){
+            const formControl = input.parentElement;
+            formControl.className = 'form-control success';
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
+
